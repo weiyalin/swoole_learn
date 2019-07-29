@@ -48,3 +48,5 @@ class Server
     }
 
 }
+
+$server = new Server();
