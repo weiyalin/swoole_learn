@@ -31,7 +31,7 @@ class Server
         echo "Start\n";
     }
 
-    public function onConnect($serv, $fd, $from_id)
+    public function onConnect(swoole_server $serv, $fd, $from_id)
     {
         $serv->send($fd, "Hello {$fd}");
     }
