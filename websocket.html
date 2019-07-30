@@ -37,6 +37,7 @@
         }
         function send(){
             var text=$('#text').val();
+            log1('我说：'+text);
             socket.send(text);
         }
         // function send2() {
