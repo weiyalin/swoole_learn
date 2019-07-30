@@ -49,7 +49,7 @@ class Server {
     private function createTable() {
         $this->table = new \Swoole\Table(1024);
         $this->table->column('fd', \Swoole\Table::TYPE_INT);
-        $this->table->column('name', \Swoole\Table::TYPE_STRING);
+        $this->table->column('name', \Swoole\Table::TYPE_STRING, 255);
         $this->table->create();
     }
 }
